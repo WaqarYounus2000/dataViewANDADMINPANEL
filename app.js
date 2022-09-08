@@ -8,7 +8,7 @@ function LOGIN() {
     if (email.value == 'admin' && password.value == 'admin') {
         window.location.href = "./adminview.html";
         console.log('admin login');
-       
+        
     }
     else {
         console.log('user login')
@@ -42,11 +42,11 @@ function addingfunction() {
     var gender = document.getElementsByName('gender');
     for (i = 0; i < gender.length; i++) {
         if (gender[i].checked) {
-
+            
             if (i == 0) {
                 // console.log(i)
                 gendervalue = 'Male';
-
+                
             }
             else if (i == 1) {
                 // console.log(i)
@@ -56,10 +56,10 @@ function addingfunction() {
             else {
                 // console.log(i)
                 gendervalue = 'Other';
-
+                
             }
         }
-
+        
     }
     var obj = {
         name: name,
@@ -76,22 +76,25 @@ function addingfunction() {
         for(var i=0;i<mydatalocal.length;i++){
             data.push(mydatalocal[i]);
         }
-
+        
     }
-
-
+    
+    
     //////////////////////////////////////////////////////////////////////
-
+    
     data.push(obj);
     localStorage.setItem('mydata', JSON.stringify(data));
-
-    // name = "";
-    // fname = "";
-    // email = "";
-    // Cnic= "";
-    // dateofbirth = "";
-
     console.log(data)
+}
+
+
+function gotoadmin(){
+    // window.location.href = './index.html';
+    if(true){
+
+        window.location.href = "./adminview.html";
+    }
+    
 }
 
 

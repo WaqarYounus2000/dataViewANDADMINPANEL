@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <form class="formcontainer" action="##">
+            <div><h3>Student Detials: </h3></div>
+            <div class="information">
+                <label for="name">Name</label>
+                <input class="inputfield" type="text" id="name">
+            </div>
+            <div class="information">
+                <label for="fname">Father Name</label>
+                <input class="inputfield" type="text" id="fname">
+            </div>
+            <div class="information">
+                <label for="Cnic">CNIC</label>
+                <input class="inputfield" type="text" id="Cnic">
+            </div>
+            <div class="information">
+                <label for="email">Email</label>
+                <input class="inputfield" type="email" id="email">
+            </div>
+            <div class="information">
+                <label for="dateofbirth">Date of Birth</label>
+                <input class="inputfield" type="date" id="dateofbirth">
+            </div>
+            <div class="genderclass">
+                
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Others</label>
+                
+            </div>
+
+            <div class="information">
+                <button onclick="addingfunction()" class="submitbutton button1" id="submitbuttonID">Submit</button>
+            </div>
+            <!-- <div class="information" id="gotoadminpanel">
+                <button onclick="RendertoHtml()" class="submitbutton button1">View All</button>
+                
+            </div> -->
+
+
+
+
+
+        </form>
+
+
+    </div>
+<script src="app.js" ></script>
+</body>
+
+</html>

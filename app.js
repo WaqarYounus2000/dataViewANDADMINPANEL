@@ -85,14 +85,14 @@ function addingfunction() {
     data.push(obj);
     localStorage.setItem('mydata', JSON.stringify(data));
 
-    // name = "";
-    // fname = "";
-    // email = "";
-    // Cnic= "";
-    // dateofbirth = "";
-
     console.log(data)
 }
 
 
+
+function gotoadmin()
+{
+    window.location.href = "index.html";
+    window.location.href = "./index.html";
+}
 

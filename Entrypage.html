@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+ 
 </head>
 
 <body>
     <div class="container">
         
         <form class="formcontainer" action="##">
-            <div><h3>Student Detials: </h3></div>
+            <div>
+                <h3>Student Detials: </h3>
+            </div>
             <div class="information">
                 <label for="name">Name</label>
                 <input class="inputfield" type="text" id="name">
@@ -35,7 +38,7 @@
                 <input class="inputfield" type="date" id="dateofbirth">
             </div>
             <div class="genderclass">
-                
+
                 <input type="radio" id="male" name="gender">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender">
@@ -44,24 +47,28 @@
                 <label for="other">Others</label>
                 
             </div>
-
+            
             <div class="information">
                 <button onclick="addingfunction()" class="submitbutton button1" id="submitbuttonID">Submit</button>
             </div>
             <br>
             <div class="information" id="gotoadminpanel">
                 <button onclick="gotoadmin()" class="submitbutton button1">Admin</button>
+                
             </div>
-
-
-
-
-
+            
         </form>
 
-
+        
     </div>
-<script src="app.js" ></script>
+    
+    <script src="app.js"></script>
 </body>
+
+<!-- <script>
+    function gotoadmin(){
+        window.location.href = "/index.html";
+    }
+</script> -->
 
 </html>

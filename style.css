@@ -95,7 +95,7 @@ body {
     /* background-color: #090979; */
     background: rgb(2, 0, 36);
     background: linear-gradient(141deg, rgba(2, 0, 36, 1) 0%, rgba(21, 21, 148, 1) 50%, rgba(0, 212, 255, 1) 100%);
-    transition: 2s ease-in;
+    transition: 0.8s ease-in;
 }
 
 .button1:hover {
@@ -158,7 +158,7 @@ body {
     /* border: 1; */
     border: none;
     border-bottom: 2px solid rgb(27, 27, 212);
-    transition: 0.8s ease-out;
+    /* transition: 0.8s ease-out; */
     outline: none;
 
 }
@@ -181,4 +181,18 @@ table, th, td {
 
  .tableHead{
     width: 150px;
+  }
+
+  .container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .adminpagebutton{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
   }

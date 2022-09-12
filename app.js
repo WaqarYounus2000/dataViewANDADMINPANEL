@@ -31,7 +31,7 @@ function LOGIN() {
 // adminview page js//////////////////////////////////////////////////////////////////////////
 
 function gotoadmin(){
-        window.location.href = "/index.html";
+    window.location.href = '/index.html';
 }
 
 
@@ -39,6 +39,7 @@ function gotoadmin(){
 
 function addingfunction() {
     var data = [];
+    var ebnumber = document.getElementById("ebnumberID").value;
     var name = document.getElementById("name").value;
     var fname = document.getElementById("fname").value;
     var Cnic = document.getElementById('Cnic').value;
@@ -67,6 +68,7 @@ function addingfunction() {
 
     }
     var obj = {
+        ebnumber:ebnumber,
         name: name,
         fname: fname,
         Cnic: Cnic,
@@ -91,7 +93,7 @@ function addingfunction() {
     localStorage.setItem('mydata', JSON.stringify(data));
 
 
-    location.reload();
+    location.reload;
 
 
 
